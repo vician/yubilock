@@ -2,7 +2,7 @@
 
 # Based on: https://www.dalemacartney.com/2013/01/14/locking-and-unlocking-the-gnome3-session-with-a-yubikey/
 
-base_dir=$(dirnmae $0)
+base_dir=$(dirname $0)
 base_dir=$(realpath $base_dir)
 trusted="$base_dir/trusted"
 user=`ps aux | grep -v root | grep session | head -n 1 | awk '{print $1}'`
