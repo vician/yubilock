@@ -18,7 +18,7 @@ do_unlock="pkill i3lock"
 case "$1" in
 	enable)
 		echo "try locking"
-		su $user -c "DISPLAY=:0 $do_lock"
+		su $user -c "bash -c \"DISPLAY=:0 $do_lock\""
 	;;
 	disable)
 		echo "check unlocking"
