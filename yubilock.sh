@@ -13,7 +13,8 @@ base_dir=$(realpath $base_dir)
 trusted="$base_dir/trusted"
 
 do_lock="/home/$user/.i3/lock.sh force"
-do_unlock="pkill i3lock"
+#do_unlock="pkill i3lock"
+do_unlock="pkill slock"
 
 case "$1" in
 	enable)
