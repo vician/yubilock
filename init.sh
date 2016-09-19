@@ -38,6 +38,8 @@ else
 		echo "sudo aptitude install yubikey-personalization"
 		echo "or"
 		echo "sudo dnf install yubikey-personalization"
+		echo "or"
+		echo "sudo pacman -S yubikey-personalization"
 		exit 0
 	fi
 
